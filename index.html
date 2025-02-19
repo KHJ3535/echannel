@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/footerBanner.css" />
+    <link rel="stylesheet" href="css/mainEvent.css" />
+    <link rel="stylesheet" href="css/main__sns.css" />
+    <link rel="stylesheet" href="css/main__video.css" />
+    <link rel="stylesheet" href="css/mainProgram.css" />
+    <link rel="stylesheet" href="css/mainChannelNum.css" />
+    <link rel="stylesheet" href="css/channelWrap.css" />
+    <link rel="stylesheet" href="css/mainSchedule.css" />
+    <link rel="stylesheet" href="css/moreChannels.css" />
+    <link rel="stylesheet" href="css/mainVisual.css" />
+    <link rel="stylesheet" href="css/mainProgram.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/index.js" defer></script>
+    <script type="module" src="js/header.js" defer></script>
+    <script type="module" src="js/footerBanner.js" defer></script>
+    <script type="module" src="js/mainChannelNum.js" defer></script>
+    <script type="module" src="js/mainSchedule.js" defer></script>
+    <script type="module" src="js/moreChannels.js" defer></script>
+    <script type="module" src="js/mainVisual.js" defer></script>
+    <script type="module" src="js/mainProgram.js" defer></script>
+    <script type="module" src="js/mainSns.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__inner container">
+        <nav id="nav">
+          <ul class="header__left">
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">채널정보</a></li>
+            <li><a href="#">티캐스트</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">사업문의</a></li>
+          </ul>
+        </nav>
+        <div class="header__menu--wrap">
+          <ul class="header__menu">
+            <li class="header__menu--list">
+              <p class="menu__category--title">프로그램</p>
+              <ul class="menu__category--list">
+                <li><a href="#">전체</a></li>
+                <li><a href="#">방영예정</a></li>
+                <li><a href="#">방영중</a></li>
+                <li><a href="#">종영</a></li>
+              </ul>
+            </li>
+            <li class="header__menu--list">
+              <p class="menu__category--title">채널정보</p>
+              <ul class="menu__category--list">
+                <li><a href="#">E채널</a></li>
+                <li><a href="#">E LIKE</a></li>
+                <li><a href="#">채널뷰</a></li>
+                <li><a href="#">MX</a></li>
+                <li><a href="#">드라마큐브</a></li>
+                <li><a href="#">채널나우</a></li>
+                <li><a href="#">채널에버</a></li>
+                <li><a href="#">스크린</a></li>
+                <li><a href="#">씨네프</a></li>
+              </ul>
+            </li>
+            <li class="header__menu--list">
+              <p class="menu__category--title">티캐스트</p>
+              <ul class="menu__category--list">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">지속가능경영</a></li>
+                <li><a href="#">인재채용</a></li>
+              </ul>
+            </li>
+            <li class="header__menu--list">
+              <p class="menu__category--title">이벤트</p>
+              <ul class="menu__category--list">
+                <li><a href="#">전체</a></li>
+                <li><a href="#">진행중 이벤트</a></li>
+                <li><a href="#">종료된 이벤트</a></li>
+                <li><a href="#">당첨자 발표</a></li>
+              </ul>
+            </li>
+            <li class="header__menu--list">
+              <p class="menu__category--title">사업문의</p>
+              <ul class="menu__category--list">
+                <li><a href="#">광고안내</a></li>
+                <li><a href="#">사업·제휴</a></li>
+                <li><a href="#">큐톤안내</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo">
+          <img src="image/logo-echannel.svg" alt="mainlogo" />
+          <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+        </div>
+        <div class="header__right">
+          <ul class="header__link--wrap">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">통합편성표</a></li>
+          </ul>
+          <div class="header__btn--wrap">
+            <span class="material-symbols-outlined"> login </span>
+            <span class="material-symbols-outlined"> notifications </span>
+            <span class="material-symbols-outlined"> search </span>
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- 바로가기 -->
+      <div class="main__wrap">
+        <!-- 미니 바로가기 -->
+        <div class="more__channels">
+          <ul class="more__channels__content">
+            <li>
+              <a href="#">
+                <div class="logo echannel"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="elike">
+                <div class="logo elike"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="chview">
+                <div class="logo chview"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="mx">
+                <div class="logo mx"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="dramacube">
+                <div class="logo dramacube"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="now">
+                <div class="logo now"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="ever">
+                <div class="logo ever"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="screen">
+                <div class="logo screen"></div>
+              </a>
+            </li>
+            <li class="">
+              <a href="cinef">
+                <div class="logo cinef"></div>
+              </a>
+            </li>
+          </ul>
+          <button class="more__channels__btn">
+            <span>티캐스트 채널 더보기</span>
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+        <!-- 섹션 -->
+        <div class="contents__wrap">
+          <section id="sc-1" class="main__visual">
+            <div class="container">
+              <div class="swiper main__visual--sw">
+                <div class="swiper-wrapper mainVisual__card--wrapper">
+                  <a class="swiper-slide mainVisual__card" href="#">
+                    <video
+                      src="video/mainvideo.mp4"
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                    ></video>
+                  </a>
+                  <a class="swiper-slide mainVisual__card" href="#">
+                    <img src="image/mainbanner.webp" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <!-- 컨트롤러 추가 (슬라이드 아래) -->
+              <div class="mainVisual__swiper--controler">
+                <div class="mainVisual__swiper--remote">
+                  <div class="swiper-button-prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <i class="fa-regular fa-circle-pause .mainVisual__slide--btn">
+                  </i>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 편성표 섹션 -->
+          <section id="sc-2" class="main__schedule">
+            <div class="container">
+              <p class="sc-2__title">Today 편성표</p>
+              <div class="sc-2__broadcast--wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper broadcast">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="broadcast__card">
+                        <a href="#">
+                          <div class="info-wrap">
+                            <img src="image/logo-echannel.svg" alt="" />
+                            <p class="schedule__time">02:40</p>
+                            <p class="schedule__title">기안이쎄오 [1회]</p>
+                            <div class="label-wrap">
+                              <span class="label">15</span>
+                              <span class="label">자</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="broadcast__card">
+                        <a href="#">
+                          <div class="info-wrap">
+                            <img src="image/logo-echannel.svg" alt="" />
+                            <p class="schedule__time">02:40</p>
+                            <p class="schedule__title">기안이쎄오 [1회]</p>
+                            <div class="label-wrap">
+                              <span class="label">15</span>
+                              <span class="label">자</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="broadcast__card">
+                        <a href="#">
+                          <div class="info-wrap">
+                            <img src="image/logo-echannel.svg" alt="" />
+                            <p class="schedule__time">02:40</p>
+                            <p class="schedule__title">기안이쎄오 [1회]</p>
+                            <div class="label-wrap">
+                              <span class="label">15</span>
+                              <span class="label">자</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="broadcast__card">
+                        <a href="#">
+                          <div class="info-wrap">
+                            <img src="image/logo-echannel.svg" alt="" />
+                            <p class="schedule__time">02:40</p>
+                            <p class="schedule__title">기안이쎄오 [1회]</p>
+                            <div class="label-wrap">
+                              <span class="label">15</span>
+                              <span class="label">자</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="broadcast__card">
+                        <a href="#">
+                          <div class="info-wrap">
+                            <img src="image/logo-echannel.svg" alt="" />
+                            <p class="schedule__time">02:40</p>
+                            <p class="schedule__title">기안이쎄오 [1회]</p>
+                            <div class="label-wrap">
+                              <span class="label">15</span>
+                              <span class="label">자</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="broadcast__card">
+                        <a href="#">
+                          <div class="info-wrap">
+                            <img src="image/logo-echannel.svg" alt="" />
+                            <p class="schedule__time">02:40</p>
+                            <p class="schedule__title">기안이쎄오 [1회]</p>
+                            <div class="label-wrap">
+                              <span class="label">15</span>
+                              <span class="label">자</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+          <!-- 채널번호 섹션-->
+          <section id="sc-3" class="main__channelNum">
+            <div class="container">
+              <p class="sc__title">채널번호 안내</p>
+              <div class="sc-3__search--wrap">
+                <div class="sc-3__search--sido">
+                  <p class="mtitle">광역시/도</p>
+                  <div class="dropdown__wrap">
+                    <button class="dropdown__btn">
+                      <p>선택하세요</p>
+                      <i class="ico"></i>
+                    </button>
+                    <div class="dropdown__list--wrap">
+                      <ul class="dropdown__list">
+                        <li>서울특별시</li>
+                        <li>부산광역시</li>
+                        <li>인천광역시</li>
+                        <li>대구광역시</li>
+                        <li>대전광역시</li>
+                        <li>광주광역시</li>
+                        <li>울산광역시</li>
+                        <li>세종특별자치시</li>
+                        <li>경기도</li>
+                        <li>충청북도</li>
+                        <li>충청남도</li>
+                        <li>전라남도</li>
+                        <li>경상북도</li>
+                        <li>경상남도</li>
+                        <li>강원특별자치도</li>
+                        <li>전북특별자치도</li>
+                        <li>제주특별자치도</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="sc-3__search--sigungu">
+                  <p class="mtitle">시/군/구</p>
+                  <div class="dropdown__wrap">
+                    <button class="dropdown__btn">
+                      <p>선택하세요</p>
+                      <i class="ico"></i>
+                    </button>
+                    <div class="dropdown__list--wrap">
+                      <ul class="dropdown__list">
+                        <li>강남구</li>
+                        <li>강동구</li>
+                        <li>강북구</li>
+                        <li>강서구</li>
+                        <li>관악구</li>
+                        <li>광진구</li>
+                        <li>구로구</li>
+                        <li>금천구</li>
+                        <li>노원구</li>
+                        <li>도봉구</li>
+                        <li>동대문구</li>
+                        <li>동작구</li>
+                        <li>마포구</li>
+                        <li>서대문구</li>
+                        <li>서초구</li>
+                        <li>성동구</li>
+                        <li>성북구</li>
+                        <li>송파구</li>
+                        <li>양천구</li>
+                        <li>영등포구</li>
+                        <li>용산구</li>
+                        <li>은평구</li>
+                        <li>종로구</li>
+                        <li>중구</li>
+                        <li>중랑구</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="channelNumber__btn">검색</button>
+              </div>
+              <div class="sc-3__result--wrap">
+                <ul class="ch-list">
+                  <li class="ch-row">
+                    <ul>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-genie.svg" alt="GENIE TV" />
+                        </div>
+                        <p>998</p>
+                      </li>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-btv.svg" alt="B TV" />
+                        </div>
+                        <p>36</p>
+                      </li>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-uplus.svg" alt="UPLUS TV" />
+                        </div>
+                        <p>76</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="ch-row">
+                    <ul>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-skylife.svg" alt="SKYLIFE TV" />
+                        </div>
+                        <p>44</p>
+                      </li>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-hcn.svg" alt="HCN" />
+                        </div>
+                        <p>47</p>
+                      </li>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-lg.svg" alt="LG HelloVision" />
+                        </div>
+                        <p>47</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="ch-row">
+                    <ul>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-dlive.svg" alt="DLIVE" />
+                        </div>
+                        <p>38</p>
+                      </li>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img
+                            src="image/logo-btvcable.svg"
+                            alt="GENIE Btc cable"
+                          />
+                        </div>
+                        <p>13</p>
+                      </li>
+                      <li class="ch-col">
+                        <div class="logo-wrap">
+                          <img src="image/logo-cmb.svg" alt="CMB" />
+                        </div>
+                        <p>44</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- 프로그램 섹션-->
+          <section id="sc-4" class="sc main__program">
+            <div class="container">
+              <p class="sc__title">프로그램</p>
+              <div class="sc-main__program--wrap">
+                <div class="program__line line1">
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro1.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro2.png" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro3.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro4.webp" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="program__line line2">
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro5.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro6.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro7.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro8.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="program__line line3">
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro9.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro10.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro11.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                  <div class="program__card">
+                    <img class="card__img" src="image/pro12.jpg" alt="" />
+                    <a class="card__img--a" href="#">
+                      프로그램 상세보기
+                      <i class="fa-solid fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- VIDEO SWIPER 섹션-->
+          <section id="sc-5" class="main__video">
+            <div class="container">
+              <div class="sc-5__wrap">
+                <p class="sc__title">최신 영상</p>
+                <div class="card__list list__style">
+                  <a
+                    href="https://www.youtube.com/watch?v=rFfsY-H_hrg"
+                    class="card__item card1"
+                  >
+                    <div class="card__item--image">
+                      <img
+                        src="https://i.ytimg.com/vi/rFfsY-H_hrg/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊???: 피... 피디님 섭외된 거 맞죠?! | E채널 [도와줘!
+                      창업박람회] #shorts
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 [다해준다
+                      인력사무소] EP.01 [도와줘! 창업박람회] 매주 (목) 저녁 7시
+                      본방송 [E ...
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card2">
+                    <div class="card__item--image">
+                      <img
+                        src="https://i.ytimg.com/vi/C_4UfabhY1o/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊 전문가도 놀라는 무한 리필 고깃집 마진율 | E채널
+                      [도와줘! 창업박람회] #shorts
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 [다해준다
+                      인력사무소] EP.01 [도와줘! 창업박람회] 매주 (목) 저녁 7시
+                      본방송
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card3">
+                    <div class="card__item--image">
+                      <img
+                        src="https://i.ytimg.com/vi/EM3766pgUbQ/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🕵‍♂22회 선공개 | 용형 러브콜 0순위 청하가 용형을 찾아온
+                      이유? [용감한형사들4] 매주 (금) 밤 9시 50분 본방송
+                    </p>
+                    <p class="card__item--info">
+                      권일용 #안정환 #김선영 #이이경 #청하 #용감한형사들4 오늘
+                      밤 9시 50분! 대전 백합다방 살인사건& 송파 토막살인사건이
+                      공개 ...
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card4">
+                    <div class="card__item--image">
+                      <img
+                        src="https://i.ytimg.com/vi/jcLcBLE7z8g/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊EP.01 | 충격💥 손님보다 더 맛있게 먹는 사장님
+                      실존✨소부터 돼지까지 마음껏 골라 먹는 무한 대패 고기🥓
+                      [도와줘! 창업박람회] 매주 (목) 저녁 7시 본방송
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 절대 무한리필
+                      집에서 나올 수 없는 고기 퀄리티 고기뿐만 아니라 쌈
+                      채소부터 라면 K- ...
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card5">
+                    <div class="card__item--image">
+                      <img
+                        src="	https://i.ytimg.com/vi/rFfsY-H_hrg/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊 전문가도 놀라는 무한 리필 고깃집 마진율 | E채널
+                      [도와줘! 창업박람회] #shorts
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 [다해준다
+                      인력사무소] EP.01 [도와줘! 창업박람회] 매주 (목) 저녁 7시
+                      본방송
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card6">
+                    <div class="card__item--image">
+                      <img
+                        src="	https://i.ytimg.com/vi/rFfsY-H_hrg/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊 전문가도 놀라는 무한 리필 고깃집 마진율 | E채널
+                      [도와줘! 창업박람회] #shorts
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 [다해준다
+                      인력사무소] EP.01 [도와줘! 창업박람회] 매주 (목) 저녁 7시
+                      본방송
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card7">
+                    <div class="card__item--image">
+                      <img
+                        src="	https://i.ytimg.com/vi/rFfsY-H_hrg/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊 전문가도 놀라는 무한 리필 고깃집 마진율 | E채널
+                      [도와줘! 창업박람회] #shorts
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 [다해준다
+                      인력사무소] EP.01 [도와줘! 창업박람회] 매주 (목) 저녁 7시
+                      본방송
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="card__item card8">
+                    <div class="card__item--image">
+                      <img
+                        src="	https://i.ytimg.com/vi/rFfsY-H_hrg/hqdefault.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="card__item--tag">
+                      <span class="badge red">NEW</span>
+                      <span class="badge white">E채널</span>
+                    </div>
+                    <p class="card__item--title">
+                      🎊 전문가도 놀라는 무한 리필 고깃집 마진율 | E채널
+                      [도와줘! 창업박람회] #shorts
+                    </p>
+                    <p class="card__item--info">
+                      창업박람회 #이상민 #엄지윤 #나선욱 #E채널 [다해준다
+                      인력사무소] EP.01 [도와줘! 창업박람회] 매주 (목) 저녁 7시
+                      본방송
+                    </p>
+                    <div class="video__wrap">
+                      <img src="image/ico-video.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SNS SWIPER섹션-->
+          <section id="sc-6" class="main__sns">
+            <div class="container sc-6__container">
+              <div class="sc-6__sticky--wrap">
+                <p class="sc-6__title">SNS</p>
+                <div>
+                  <p>E채널 공식 인스타그램 바로가기</p>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </div>
+              <div class="swiper sns__sw">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="sns__card">
+                      <a href="#">
+                        <img
+                          src="https://scontent-nrt1-1.cdninstagram.com/v/t39.30808-6/480303592_1060996526068558_9031624193163336400_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=ROcvucc1Z_IQ7kNvgHbQziU&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AHyIpCWzlkfvhS30mcRHr11&oh=00_AYCmTRPDQpo0ZrErXkHn5e2dKRQ8BLaOFHouK0xV08fd2w&oe=67BA7C63"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sns__card">
+                      <a href="#">
+                        <img
+                          src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/476968635_2905371649639891_4928812171659230188_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=zGHSr4t-bd0Q7kNvgHmWtc8&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AX_3pfn7XlCjERyfhu8W3-n&oh=00_AYCgQztu2gBjuMvNySALibRHicG3rvsUEWNQbsTM-7KSSw&oe=67BB04C7"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sns__card">
+                      <a href="#">
+                        <img
+                          src="https://scontent-nrt1-2.cdninstagram.com/v/t51.29350-15/480222526_2620646988326273_1045274057617919547_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=FGeqH1cxaDYQ7kNvgFzh1m4&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AX_3pfn7XlCjERyfhu8W3-n&oh=00_AYCC0DPOzhsmG2un0iyi4I6IJsPJ51pI8Tipz_y16n3awg&oe=67BAFAF5"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sns__card">
+                      <a href="#">
+                        <img
+                          src="https://scontent-nrt1-2.cdninstagram.com/v/t51.29350-15/472653994_1329321158100419_7098251562886148964_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=1-7&_nc_sid=18de74&_nc_ohc=Ifmy492qMmIQ7kNvgFH0SQE&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AX_3pfn7XlCjERyfhu8W3-n&oh=00_AYCtqFngaztV0pa2PPrpqVuBuJL6VEb-GO5s387agqy2pg&oe=67BB151A"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="sns__card">
+                      <a href="#">
+                        <img
+                          src="https://scontent-nrt1-2.cdninstagram.com/v/t51.29350-15/479438419_805248481795326_7374279649617464269_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=xydDYhnBZZEQ7kNvgEmy7Jd&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AX_3pfn7XlCjERyfhu8W3-n&oh=00_AYCfdscH-wTHS-1crLWKgf9mOutr_mvhr9ZdmRAl79L9bg&oe=67BB0A4E"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="footer__banner container">
+          <div class="swiper footer__banner--sw">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/footer-banner1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="image/footer-banner2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer__wrap container">
+        <div class="footer__top">
+          <ul class="footer__link">
+            <li>회사소개</li>
+            <li>광고안내</li>
+            <li>큐톤안내</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>영상정보처리기기 운영·관리 방침</li>
+            <li>태광신문고</li>
+            <li>부정신고</li>
+          </ul>
+          <div class="footer__companylink">
+            <p>계열사 바로가기</p>
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+          </div>
+        </div>
+        <div class="footer__info">
+          <p class="footer__info--location">
+            03184 서울특별시 종로구 새문안로68 흥국생명빌딩 9층(신문로1가)
+          </p>
+          <div class="footer__ceo">
+            <p>(주)티캐스트 (주)이채널 대표자 엄재용</p>
+            <p>대표메일 tcaster@tcast.tv</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <ul class="footer-sns">
+            <li>
+              <a href="https://www.youtube.com/@tcast" target="_blank"
+                ><i class="ico ico-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/tcast.official/"
+                target="_blank"
+                ><i class="ico ico-insta"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

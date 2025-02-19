@@ -1,0 +1,20 @@
+.main__event {
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  line-height: 250px;
+}
+.main__event > p:first-child {
+  font-size: 250px;
+  font-weight: 900;
+  font-family: "Permanent Marker", serif;
+  font-style: normal;
+  opacity: 0.2;
+}
+.main__event > p:last-child {
+  font-size: 34px;
+  font-weight: 800;
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+}

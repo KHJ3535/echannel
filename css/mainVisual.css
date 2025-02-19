@@ -1,0 +1,56 @@
+#sc-1 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.mainVisual__card--wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.mainVisual__card {
+  width: 100%;
+  height: 600px;
+  border-radius: 30px;
+}
+
+.mainVisual__card > video,
+.mainVisual__card > img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.mainVisual__swiper--controler {
+  position: relative;
+}
+.mainVisual__swiper--remote {
+  position: absolute;
+}
+.mainVisual__swiper--remote > .swiper-button-prev::after,
+.mainVisual__swiper--remote > .swiper-button-next::after {
+  display: none;
+}
+.mainVisual__swiper--remote > .swiper-button-prev,
+.mainVisual__swiper--remote > .swiper-button-next {
+  top: 22px;
+  color: white;
+}
+.mainVisual__swiper--remote > .swiper-button-prev {
+  left: 0;
+}
+.mainVisual__swiper--remote > .swiper-button-next {
+  left: 25px;
+}
+.mainVisual__swiper--remote > i {
+  cursor: pointer;
+}
+.fa-circle-pause,
+.fa-circle-play {
+  position: absolute;
+  top: 12.5px;
+  left: 55px;
+  font-size: 20px;
+  color: white;
+}

@@ -1,0 +1,109 @@
+#sc-2 {
+  padding-bottom: 20px;
+  position: relative;
+  color: white;
+}
+
+.sc-2__title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+}
+
+.sc-2__broadcast--wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sc-2__broadcast--wrap > .swiper {
+  width: 90%;
+  overflow: visible;
+}
+
+.sc-2__broadcast--wrap > .swiper > .swiper-wrapper {
+  display: flex;
+}
+
+/* 카드 스타일 */
+.broadcast__card {
+  width: 280px;
+  height: 333px;
+  border-radius: 10px;
+  background-color: #4c4c4c;
+}
+.info-wrap > img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 28px;
+  top: 32px;
+}
+/* 방송 카드 내부 정보 */
+.info-wrap {
+  width: 100%;
+  height: 100%;
+  padding: 32px 28px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+}
+
+.schedule__time {
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  top: 32px;
+  left: 28px;
+}
+
+.schedule__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #1a1a1a;
+  font-size: 14px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc-2__broadcast--wrap > .swiper-button-prev,
+.sc-2__broadcast--wrap > .swiper-button-next {
+  background-color: #fff;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: black !important;
+}
+
+.sc-2__broadcast--wrap > .swiper-button-prev:after,
+.sc-2__broadcast--wrap > .swiper-button-next:after {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
