@@ -1,6 +1,6 @@
 const footerBannerSw = new Swiper(".footer__banner--sw", {
-  loop: true, // 무한 스크롤
-  slidesPerview: 1, // 몇 개 보여줄지
+  loop: true,
+  slidesPerview: 1,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -9,8 +9,8 @@ const footerBannerSw = new Swiper(".footer__banner--sw", {
     el: ".swiper-scrollbar",
   },
   autoplay: {
-    delay: 2000, // 3초마다 자동 전환
+    delay: 2000,
     disableOnInteraction: false,
   },
-  speed: 800, // 전환 애니메이션 속도
+  speed: 800,
 });
